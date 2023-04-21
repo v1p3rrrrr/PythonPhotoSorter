@@ -1,0 +1,36 @@
+# Number of script's concurrent threads
+num_processes: 5
+
+#Folder containing input images
+input_folder: C:/input
+
+# Folder containing output images, automatically cleared at the beginning of script execution
+output_folder: C:/output
+
+# Sort images by quality metric: 0 noise, 1 blur, 2 sharpness, 3 contrast
+sort_by: 0
+
+# 0 - Work mode: 0 copy suitable images to output_folder, 1 rename all images in input_folder, 2 rename all images in input_folder and copy suitable ones to output_folder
+work_mode: 1
+
+# 1 - Determines whether to try to detect faces on each image and evaluate their blurriness, 0 - quickly evaluate blurriness without face detection
+look_at_faces: 0
+
+# Works only with look_at_faces: 1
+# Face visualization mode: 0 off, 1 show detected faces, 2 show blur values on faces
+visualize_mode: 0
+
+# Images with noise values higher than this threshold won't be copied to output_folder
+noise_threshold: 220
+
+# Images with blur values lower than this threshold won't be copied to output_folder
+blur_threshold: 50
+
+# Images with contrast values lower than this threshold won't be copied to output_folder
+contrast_threshold: 1
+
+# Images with sharpness values lower than this threshold won't be copied to output_folder
+sharpness_threshold: 1
+
+# Maximum width of face visualization on screen
+visualize_image_size: 1280

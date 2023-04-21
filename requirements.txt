@@ -1,0 +1,8 @@
+opencv-python
+numpy
+imageio[all]
+concurrent.futures
+shutil
+mtcnn
+pyyaml
+PyWavelets
